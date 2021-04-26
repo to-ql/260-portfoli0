@@ -1,15 +1,16 @@
 const profileBtn = document.querySelector(".js-profileBtn");
-const profileScreen = document.querySelector(".js-profileScreen");
+const profilePage = document.querySelector(".js-profile");
 const workListBtn = document.querySelector(".js-workListBtn")
 const workList = document.querySelector(".js-workList")
 
 const currentText = workListBtn.innerHTML;
 
-const PROFLIE_CLICKED = "right"
-const WORKLIST_CLICKED = "opacity"
+const PROFLIE_CLICKED = "profileAni"
+const WORKLIST_CLICKED = "worklistAni"
+
 
 function handleClickProfile() {
-    profileScreen.classList.toggle(PROFLIE_CLICKED);
+    profilePage.classList.toggle(PROFLIE_CLICKED);
  }
 
 function handleClickWorkList() {
@@ -20,8 +21,12 @@ function handleClickWorkList() {
     }else{
         workListBtn.innerText = currentText;
     }
+}
+
+function handleFontColor (){
 
 }
+
 
 function init () {
     profileBtn.addEventListener("click", handleClickProfile)

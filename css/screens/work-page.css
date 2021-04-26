@@ -1,0 +1,95 @@
+.work {
+  overflow: scroll;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  bottom: -100vh;
+  background-color: #3f98d3;
+  transition: all 0.4s ease-in-out;
+}
+
+.work_page01 {
+  background-color: #3f98d3;
+}
+
+.work_page02 {
+  background-color: #f9d64d;
+}
+
+.work_page03 {
+  background-color: #fff;
+}
+.work.workAni {
+  bottom: 0;
+}
+
+.work .layout {
+  padding: 40vh 7vw;
+}
+
+.work_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.work_img {
+  width: 50vw;
+  height: 80vh;
+}
+
+.work_page01 .work_img {
+  background: url(../../image/workList/work/work01.png) no-repeat center;
+  background-size: contain;
+}
+.work_page02 .work_img {
+  background: url(../../image/workList/work/work02.png) no-repeat center;
+  background-size: contain;
+}
+
+.work_page03 .work_img {
+  background: url(../../image/workList/work/work03.png) no-repeat center;
+  background-size: contain;
+}
+
+.work_text-box {
+  margin-top: 10vh;
+}
+.work_page01 .work_text-box {
+  color: #fff;
+}
+.work_page02 .work_text-box {
+  color: #000;
+}
+.work_page03 .work_text-box {
+  color: #000;
+}
+.work_title {
+  font-size: 24px;
+  font-weight: 900;
+  text-align: center;
+}
+
+.work_link {
+  position: relative;
+  padding: 2vh 0;
+}
+
+.work_link a {
+  position: absolute;
+  right: 0;
+  font-size: 12px;
+  font-weight: 400;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.work_link a:hover {
+  font-weight: 700;
+}
+
+.work_desc {
+  font-size: 16px;
+  font-weight: 300;
+  padding: 3vh 0;
+}

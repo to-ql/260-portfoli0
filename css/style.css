@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Rock+Salt&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;700;900&family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 /*font-family: 'Permanent Marker', cursive;
 font-family: 'Rock Salt', cursive;*/
 
@@ -6,10 +7,17 @@ font-family: 'Rock Salt', cursive;*/
 
 @import "components/header.css";
 
+@import "screens/profile.css";
+@import "screens/work-page.css";
+
 body {
   background-color: #bc3108;
+  overflow: hidden;
+  font-family: "Noto Sans", "Noto Sans KR", sans-serif;
 }
-
+.inactive {
+  visibility: hidden !important;
+}
 :root {
-  --horizontal-space: 40px;
+  --horizontal-space: 10vw;
 }

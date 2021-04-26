@@ -1,58 +1,57 @@
 .header {
-  position: relative;
-  width: 100%;
+  position: fixed;
+  display: flex;
+  width: 50vw;
   height: 45px;
-  padding: 0 var(--horizontal-space);
-  margin-top: 40px;
+  margin: 6vh 2vw;
+  flex-direction: column;
+  z-index: 1000;
 }
 
-.main-title {
+.logo {
+  width: 5vw;
+  cursor: pointer;
+}
+.logo img {
+  width: 100%;
+}
+.logo a {
   font-family: "Rock Salt", cursive;
   font-size: 40px;
   font-weight: bold;
   color: #000;
 }
+
 .main-gnb {
-  position: absolute;
-  bottom: 0;
-  left: 180px;
+  width: 13vw;
+  margin-top: 6vh;
 }
 .main-gnb > li {
   display: inline-block;
-  margin-right: 20px;
-}
-.main-gnb li:last-child {
-  margin-right: 0;
-}
-.main-gnb a {
-  font-size: 13px;
-}
+  height: 6vh;
 
-.profile {
-  position: absolute;
-  width: 50%;
-  height: 100%;
-  top: 0;
-  right: -50%;
-  background-color: gray;
-  transition: all 0.7s ease-in;
+  margin-right: 3vw;
+  font-size: 13px;
+  white-space: nowrap;
 }
-.profile.right {
-  right: 0;
+.main-gnb > li:nth-child(2) {
+  position: relative;
+  margin-right: 0;
 }
 
 .work-list {
   position: absolute;
-  top: 0;
-  opacity: 0;
+  top: 30px;
+  display: none;
   transition: all 0.4s ease-out;
 }
-.work-list.opacity {
-  opacity: 1;
+.work-list.worklistAni {
+  display: block;
 }
 .work-list li {
   margin-bottom: 8px;
 }
+
 .work-list a {
   text-decoration: underline;
   transition: all 0.2s ease-in-out;
@@ -61,5 +60,27 @@
   color: #fff;
 }
 
-.work01 {
+@media (max-width: 1023px) {
+  .main-title {
+  }
+}
+
+@media (max-width: 767px) {
+  .title {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 639px) {
+  .main-gnb > li {
+    display: block;
+  }
+}
+
+.font_color {
+  color: #000;
+}
+
+.bg_color {
+  background-color: #f9d64d;
 }
