@@ -4,7 +4,6 @@
   width: 100vw;
   height: 100vh;
   bottom: -100vh;
-  background-color: #3f98d3;
   transition: all 0.4s ease-in-out;
 }
 
@@ -17,6 +16,10 @@
 }
 
 .work_page03 {
+  background-color: #fff;
+}
+
+.work_page04 {
   background-color: #fff;
 }
 .work.workAni {
@@ -46,9 +49,12 @@
   background: url(../../image/workList/work/work02.png) no-repeat center;
   background-size: contain;
 }
-
 .work_page03 .work_img {
   background: url(../../image/workList/work/work03.png) no-repeat center;
+  background-size: contain;
+}
+.work_page04 .work_img {
+  background: url(../../image/workList/work/work04.png) no-repeat center;
   background-size: contain;
 }
 
