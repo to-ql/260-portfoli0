@@ -2,19 +2,16 @@
   position: fixed;
   display: flex;
   width: 50vw;
-  height: 45px;
-  margin: 6vh 2vw;
+  margin: 8vh 3vw;
   flex-direction: column;
-  z-index: 1000;
+  z-index: 100;
 }
 
 .logo {
-  width: 5vw;
+  width: 10vw;
   cursor: pointer;
 }
-.logo img {
-  width: 100%;
-}
+
 .logo a {
   font-family: "Rock Salt", cursive;
   font-size: 40px;
@@ -23,20 +20,24 @@
 }
 
 .main-gnb {
-  width: 13vw;
+  width: 20vw;
   margin-top: 6vh;
 }
 .main-gnb > li {
   display: inline-block;
   height: 6vh;
-
   margin-right: 3vw;
-  font-size: 13px;
+  font-size: 14px;
+  font-weight: 300;
   white-space: nowrap;
 }
 .main-gnb > li:nth-child(2) {
   position: relative;
   margin-right: 0;
+}
+
+.main-gnb .hover:hover .main-gnb .hover a {
+  background-color: brown;
 }
 
 .work-list {
@@ -57,7 +58,7 @@
   transition: all 0.2s ease-in-out;
 }
 .work-list a:hover {
-  color: #fff;
+  opacity: 0.3;
 }
 
 @media (max-width: 1023px) {

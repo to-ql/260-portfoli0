@@ -29,7 +29,7 @@ function handleFontColor (){
 
 
 function init () {
-    profileBtn.addEventListener("click", handleClickProfile)
+    /*profileBtn.addEventListener("click", handleClickProfile)*/
     workListBtn.addEventListener("click", handleClickWorkList)
 }
 

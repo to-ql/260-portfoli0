@@ -4,7 +4,7 @@
   width: 100vw;
   height: 100vh;
   bottom: -100vh;
-  transition: all 0.4s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .work_page01 {
@@ -27,13 +27,15 @@
 }
 
 .work .layout {
-  padding: 40vh 7vw;
+  padding: 40vh 2vw;
 }
 
 .work_container {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 20vh 0;
 }
 
 .work_img {
@@ -59,7 +61,11 @@
 }
 
 .work_text-box {
-  margin-top: 10vh;
+  position: absolute;
+  display: flex;
+  width: 96vw;
+  left: 0;
+  bottom: 0;
 }
 .work_page01 .work_text-box {
   color: #fff;
@@ -71,31 +77,30 @@
   color: #000;
 }
 .work_title {
-  font-size: 24px;
+  display: block;
+  width: 40%;
+  font-size: 50px;
   font-weight: 900;
-  text-align: center;
+}
+
+.work_text-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.work_desc {
+  font-size: 16px;
+  font-weight: 300;
 }
 
 .work_link {
-  position: relative;
-  padding: 2vh 0;
-}
-
-.work_link a {
-  position: absolute;
-  right: 0;
   font-size: 12px;
   font-weight: 400;
   text-decoration: underline;
   cursor: pointer;
 }
 
-.work_link a:hover {
+.work_link:hover {
   font-weight: 700;
-}
-
-.work_desc {
-  font-size: 16px;
-  font-weight: 300;
-  padding: 3vh 0;
 }
