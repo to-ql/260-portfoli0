@@ -1,0 +1,131 @@
+body {
+  /*background-color: #bc3108;*/
+  overflow: hidden;
+  /*font-family: "Noto Sans", sans-serif;
+  font-family: "Noto Sans", "Noto Sans KR", sans-serif;*/
+}
+
+:root {
+  --margin: 3vw;
+}
+
+.wrap {
+  width: 100vw;
+  height: 100vh;
+}
+
+.splash_screen {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  z-index: 10000;
+  background-color: grey;
+  transform: translateY(0);
+  animation: splash 0.6s ease-in-out forwards;
+  animation-delay: 0.7s;
+}
+@keyframes splash {
+  from {
+  }
+  to {
+    transform: translateY(100%);
+    visibility: hidden;
+  }
+}
+
+.header {
+  position: fixed;
+  display: flex;
+  width: 50vw;
+  margin: 8vh var(--margin);
+  flex-direction: column;
+  z-index: 100;
+}
+
+.logo {
+  width: 10vw;
+  cursor: pointer;
+}
+
+.logo a {
+  font-family: "Rock Salt", cursive;
+  font-size: 20px;
+  font-weight: bold;
+  color: #000;
+}
+
+.logo a:hover {
+  opacity: 0.3;
+}
+
+.main-gnb {
+  width: 20vw;
+  margin-top: 6vh;
+}
+.main-gnb > li {
+  display: inline-block;
+  height: 6vh;
+  margin-right: 3vw;
+  font-size: 14px;
+  white-space: nowrap;
+}
+.main-gnb > li:nth-child(2) {
+  position: relative;
+  margin-right: 0;
+}
+
+.work-list {
+  position: absolute;
+  top: 30px;
+  display: none;
+  transition: all 0.4s ease-out;
+}
+.work-list.worklistAni {
+  display: block;
+}
+.work-list li {
+  margin-bottom: 8px;
+}
+
+.work-list a {
+  text-decoration: underline;
+  transition: all 0.2s ease-in-out;
+}
+.work-list a:hover {
+  opacity: 0.3;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 50vw;
+  box-sizing: border-box;
+  margin: 4vh var(--margin);
+  z-index: 100;
+}
+
+footer p {
+  font-size: 11px;
+}
+
+/*휴대폰 세로*/
+@media screen and (min-width: 0px) and (max-width: 479px) {
+  footer {
+    width: 100vw;
+  }
+}
+/*휴대폰 가로*/
+@media screen and (min-width: 480px) and (max-width: 767px) {
+}
+/*태블릿*/
+@media screen and (min-width: 768px) and (max-width: 799px) {
+}
+/*일반모니터*/
+@media screen and (min-width: 800px) and (max-width: 1023px) {
+}
+/*노트북*/
+@media screen and (min-width: 1024px) and (max-width: 1365px) {
+}
+/*가로가 긴 모니터*/
+@media screen and (min-width: 1366px) and (max-width: 1915px) {
+}

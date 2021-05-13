@@ -1,39 +1,44 @@
-/*body {
-  background: linear-gradient(#f9ed0b 0%, #3399ff 30%, #0099ff 100%);
-}*/
-.wrap {
-  width: 100vw;
-  height: 100vh;
-  /*background-color: #bc3108;*/
-  /*background: linear-gradient(to bottom right, #bc3108, rgb(165, 29, 29));*/
-}
-.splash_screen {
+.main_text-container {
   position: absolute;
-  width: 100vw;
-  height: 100vh;
-  z-index: 10000;
-  background-color: grey;
-  transform: translateY(0);
-  animation: splash 0.6s ease-in-out forwards;
-  animation-delay: 0.7s;
-}
-
-@keyframes splash {
-  from {
-  }
-  to {
-    transform: translateY(100%);
-    visibility: hidden;
-  }
-}
-.greeing_container {
-  position: absolute;
+  left: 0;
   top: 50%;
-  /*transform: translateY(-50%);*/
-  margin: 0 2vw;
-  width: 50vw;
+  transform: translateY(-50%);
+  margin-left: var(--margin);
 }
 
-.greeing_container p {
-  font-size: 18px;
+.main_text p {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+.main_text span {
+  font-weight: 700;
+}
+
+/*휴대폰 세로*/
+@media screen and (min-width: 0px) and (max-width: 479px) {
+  .main_text {
+    width: 90vw;
+  }
+  .main_text p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.5;
+  }
+}
+/*휴대폰 가로*/
+@media screen and (min-width: 480px) and (max-width: 767px) {
+}
+/*태블릿*/
+@media screen and (min-width: 768px) and (max-width: 799px) {
+}
+/*일반모니터*/
+@media screen and (min-width: 800px) and (max-width: 1023px) {
+}
+/*노트북*/
+@media screen and (min-width: 1024px) and (max-width: 1365px) {
+}
+/*가로가 긴 모니터*/
+@media screen and (min-width: 1366px) and (max-width: 1915px) {
 }

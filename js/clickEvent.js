@@ -23,11 +23,6 @@ function handleClickWorkList() {
     }
 }
 
-function handleFontColor (){
-
-}
-
-
 function init () {
     /*profileBtn.addEventListener("click", handleClickProfile)*/
     workListBtn.addEventListener("click", handleClickWorkList)

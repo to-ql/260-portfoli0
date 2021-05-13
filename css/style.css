@@ -1,42 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Rock+Salt&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;700;900&family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;300;900&display=swap");
 /*font-family: 'Permanent Marker', cursive;
 font-family: 'Rock Salt', cursive;*/
 
 @import "./reset.css";
-
-@import "components/header.css";
+@import "./common.css";
 
 @import "screens/main.css";
 @import "screens/profile.css";
 @import "screens/work-page.css";
-
-body {
-  /*background-color: #bc3108;*/
-  overflow: hidden;
-  font-family: "Noto Sans", sans-serif;
-  /*font-family: "Noto Sans", "Noto Sans KR", sans-serif;*/
-}
-.inactive {
-  visibility: hidden !important;
-}
-
-:root {
-  --horizontal-space: 10vw;
-}
-.wrap {
-  width: 100vw;
-  height: 100vh;
-  /*background-color: #bc3108;*/
-  /*background: linear-gradient(to bottom right, #bc3108, rgb(165, 29, 29));*/
-}
-.splash_screen {
-  position: absolute;
-  width: 100vw;
-  height: 100vh;
-  z-index: 10000;
-  background: linear-gradient(to bottom right, #bc3108, f);
-  transform: translateY(0);
-  animation: splash 0.6s ease-in-out forwards;
-  animation-delay: 0.7s;
-}

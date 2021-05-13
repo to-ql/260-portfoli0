@@ -7,6 +7,14 @@
   transition: all 0.5s ease-in-out;
 }
 
+.work.workAni {
+  bottom: 0;
+}
+
+.work .layout {
+  padding: 40vh 2vw;
+}
+
 .work_page01 {
   background-color: #3f98d3;
 }
@@ -22,15 +30,8 @@
 .work_page04 {
   background-color: #fff;
 }
-.work.workAni {
-  bottom: 0;
-}
 
-.work .layout {
-  padding: 40vh 2vw;
-}
-
-.work_container {
+.work_contents {
   position: relative;
   display: flex;
   flex-direction: column;
