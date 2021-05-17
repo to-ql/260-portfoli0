@@ -41,7 +41,7 @@
 
 .work_img {
   width: 50vw;
-  height: 80vh;
+  height: 70vh;
 }
 
 .work_page01 .work_img {
@@ -107,4 +107,56 @@
 
 .work_link:hover {
   font-weight: 700;
+}
+
+/*휴대폰 세로*/
+@media screen and (min-width: 0px) and (max-width: 479px) {
+  .work .layout {
+    padding: 10vh 0;
+  }
+
+  .work_contents {
+    padding: 0;
+  }
+
+  .work_img {
+    width: 80vw;
+    margin-bottom: 30vh;
+  }
+
+  .work_text-box {
+    flex-direction: column;
+  }
+
+  .work_title {
+    width: 100vw;
+    font-size: 30px;
+    margin-bottom: 5vh;
+  }
+  .work_text-right {
+    width: 100%;
+  }
+  .work_desc {
+    font-size: 12px;
+    margin-bottom: 5vh;
+  }
+
+  footer {
+    width: 100vw;
+  }
+}
+/*휴대폰 가로*/
+@media screen and (min-width: 480px) and (max-width: 767px) {
+}
+/*태블릿*/
+@media screen and (min-width: 768px) and (max-width: 799px) {
+}
+/*일반모니터*/
+@media screen and (min-width: 800px) and (max-width: 1023px) {
+}
+/*노트북*/
+@media screen and (min-width: 1024px) and (max-width: 1365px) {
+}
+/*가로가 긴 모니터*/
+@media screen and (min-width: 1366px) and (max-width: 1915px) {
 }
