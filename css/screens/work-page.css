@@ -64,9 +64,10 @@
 .work_text-box {
   position: absolute;
   display: flex;
-  width: 96vw;
-  left: 0;
+  width: 80vw;
+  left: 50%;
   bottom: 0;
+  transform: translateX(-50%);
 }
 .work_page01 .work_text-box {
   color: #fff;
@@ -86,6 +87,8 @@
 
 .work_text-right {
   display: flex;
+  width: 50%;
+  line-height: 2;
   flex-direction: column;
   justify-content: space-between;
 }
